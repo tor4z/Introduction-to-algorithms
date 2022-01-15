@@ -34,9 +34,9 @@ void print_array(int *A, int n)
 int main()
 {
     int n = 7;
-    int A [n] = {1, 2, 5, 6, 7, 8, 3};
+    int A [] = {1, 2, 5, 6, 7, 8, 3};
     int B [n] = {0};
-    int tmp[MAXKEY] = {0};
+    int tmp [MAXKEY] = {0};
     counting_sort(A, B, tmp, n);
 
     print_array(A, n);

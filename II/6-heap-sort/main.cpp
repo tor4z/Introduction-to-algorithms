@@ -35,7 +35,7 @@ void max_heapify(int *A, int i, int n)
         if(A[largest_index] > A[i])
         {
             tmp = A[i];
-            A[i] = A[largest_index]
+            A[i] = A[largest_index];
             A[largest_index] = tmp;
             max_heapify(A, largest_index, n);
         }
