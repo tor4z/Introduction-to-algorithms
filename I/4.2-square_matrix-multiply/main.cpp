@@ -50,7 +50,7 @@ Matrix *square_matrix_multiply(Matrix *m1, Matrix *m2)
             for (size_t k = 0; k < m1->size; k++)
             {
                 out->data[i * m1->size + j] += 
-                    m1->data[i * m1->size + k] * m2->data[j * m1->size + k];
+                    m1->data[i * m1->size + k] * m2->data[k * m1->size + j];
             }
         }
     }
