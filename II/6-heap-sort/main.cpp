@@ -119,14 +119,25 @@ void heap_increase_key(int *A, int k, int i, int n)
 }
 
 
-int heap_maximum(int *A, int n)
+int heap_maximum(int *A, const int n)
 {
     return A[0];
 }
 
 
+void print_array(const int *A, const int n)
+{
+    for(int i = 0; i < n; i++)
+        cout<< A[i] << " ";
+    cout << endl;
+}
+
+
 int main()
 {
-    
+    int A[7] = {1, 2, 5, 6, 7, 8, 3};
+    print_array(A, 7);
+    heap_sort(A, 7);
+    print_array(A, 7);
     return 0;
 }

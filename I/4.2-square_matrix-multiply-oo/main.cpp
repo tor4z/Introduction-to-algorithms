@@ -25,7 +25,6 @@ public:
             data[i] = it;
             ++i;
         }
-        
     }
 
     Matrix &operator*(const Matrix &m)
